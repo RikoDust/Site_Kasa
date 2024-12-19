@@ -1,6 +1,6 @@
 import { useState } from "react"; // Import de useState
-import '../styles/main.css';
-import logo from "../assets/logos/logo.png";
+import '../../styles/main.css';
+import logo from "../../assets/logos/logo.png";
 
 function Header() {
     const [activeLink, setActiveLink] = useState("Accueil");
