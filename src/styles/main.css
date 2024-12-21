@@ -101,14 +101,36 @@ body {
   color: #FFFFFF;
   height: 200px;
 }
-
-.footer-logo {
+.footer .footer-logo {
   max-width: 120px;
   margin-bottom: 1.6rem;
 }
-
-.footer-text {
+.footer .footer-text {
   color: #FFFFFF;
   font-size: 16px;
   margin-bottom: 1.6rem;
+}
+
+.error404 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 7rem;
+}
+.error404 .error-title {
+  color: #FF6060;
+  font-size: 15rem;
+  margin-top: 5rem;
+  margin-bottom: 1.2rem;
+}
+.error404 .error-text {
+  color: #FF6060;
+  font-size: 2.2rem;
+  margin-bottom: 6rem;
+}
+.error404 .a {
+  text-decoration: underline;
+  color: #000000;
+  font-size: 18px;
 }

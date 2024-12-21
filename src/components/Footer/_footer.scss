@@ -8,15 +8,16 @@
     background-color: $background-color-footer;
     color: $white-color;
     height: 200px;
+
+    .footer-logo{
+        max-width: 120px;
+        margin-bottom: 1.6rem;
+    }
+    
+    .footer-text{
+        color: $white-color;
+        font-size: 16px;
+        margin-bottom: 1.6rem;
+    }
 }
 
-.footer-logo{
-    max-width: 120px;
-    margin-bottom: 1.6rem;
-}
-
-.footer-text{
-    color: $white-color;
-    font-size: 16px;
-    margin-bottom: 1.6rem;
-}
