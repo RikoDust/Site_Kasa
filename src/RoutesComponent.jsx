@@ -2,6 +2,7 @@ import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 
 // Components
 import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
 // Pages
 import Home from "./pages/Home";
@@ -15,7 +16,7 @@ import About from "./pages/About";
 function RoutesComponent() {
     return(
         <Router>
-            <div>
+            <div className="main-container">
                 <Header />
                     <Routes>
                         <Route path="/" element={<Home />} />
@@ -23,9 +24,9 @@ function RoutesComponent() {
                         <Route path="/a-propos" element={<About />} />
                         <Route path="*" element={<NotFound />} />
                     </Routes>
-            </div>
+                    </div>
+                <Footer />
         </Router>
-        
     );
 }
 

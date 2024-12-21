@@ -10,15 +10,19 @@ html {
 }
 
 body {
-  background-color: #242424; /* couleur de fond pour developpement */
-  /*background-color: $white-color; */
+  /*background-color: darkgrey; /* couleur de fond pour developpement */
+  background-color: #FFFFFF;
   font-family: "Montserrat", sans-serif;
   width: 100%;
-  max-width: 1240px;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
+}
+
+.main-container {
+  max-width: 1240px;
+  margin: 0 auto;
 }
 
 /* components */
@@ -85,4 +89,26 @@ body {
   color: #FFFFFF;
   position: relative;
   z-index: 2;
+}
+
+/*** Footer ***/
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #000000;
+  color: #FFFFFF;
+  height: 200px;
+}
+
+.footer-logo {
+  max-width: 120px;
+  margin-bottom: 1.6rem;
+}
+
+.footer-text {
+  color: #FFFFFF;
+  font-size: 16px;
+  margin-bottom: 1.6rem;
 }

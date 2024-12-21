@@ -6,14 +6,19 @@ html{
 }
 
 body{
-    background-color: #242424; /* couleur de fond pour developpement */
-    /*background-color: $white-color; */
+    /*background-color: darkgrey; /* couleur de fond pour developpement */
+    background-color: $white-color;
     font-family: $font-primary;
     width: 100%;
-    max-width: 1240px;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
   }
+
+.main-container{
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
 
