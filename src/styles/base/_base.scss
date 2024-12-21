@@ -1,7 +1,19 @@
 /*** base ***/
 
+html{
+  display: flex;
+  justify-content: center;
+}
+
 body{
-    background-color: #242424; /* couleur de fond par default */
+    background-color: #242424; /* couleur de fond pour developpement */
+    /*background-color: $white-color; */
     font-family: $font-primary;
+    width: 100%;
+    max-width: 1240px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
   }
 
