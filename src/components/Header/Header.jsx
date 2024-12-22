@@ -1,9 +1,10 @@
-import { useState } from "react"; // Import de useState
+import { useLocation } from "react-router-dom";
+import { Link } from "react-router-dom"; // Import Link pour la navigation
 import '../../styles/main.css';
 import logo from "../../assets/logos/logo.png";
 
 function Header() {
-    const [activeLink, setActiveLink] = useState("Accueil");
+    const location = useLocation();
 
     return (
       <header className='header'>
@@ -11,12 +12,14 @@ function Header() {
             <img src={logo} alt="Logo_Kasa" />
         </div>
         <nav className="nav">
-            <a href="#home"
-            className={`nav-link ${activeLink === "Accueil" ? "active" : ""}`} 
-            onClick={() => setActiveLink("Accueil")}>Accueil</a>
-            <a href="#about"
-            className={`nav-link ${activeLink === "A Propos" ? "active" : ""}`}
-            onClick={() => setActiveLink("A Propos")}>A Propos</a>
+            <Link
+            to="/"
+            className={`nav-link ${location.pathname === "/" ? "active" : ""}`}>
+            Accueil</Link>
+            <Link
+            to="/a-propos"
+            className={`nav-link ${location.pathname === "/a-propos" ? "active" : ""}`}>
+            A Propos</Link>
         </nav>
       </header>
     );

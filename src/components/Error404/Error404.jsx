@@ -1,4 +1,5 @@
 import '../../styles/main.css';
+import { Link } from "react-router-dom";
 
 
 
@@ -9,9 +10,9 @@ const Error404 = () => {
             <p className='error-text'>
                 {/* eslint-disable-next-line react/no-unescaped-entities */}
                 Oups! La page que vous demandez n'existe pas.</p>
-            <a className='a' href="#home">
+            <Link to="/" className='back-home' >
                 {/* eslint-disable-next-line react/no-unescaped-entities */}
-                Retourner sur la page d'accueil</a>
+                Retourner sur la page d'accueil</Link>
         </div>
     );
 };
