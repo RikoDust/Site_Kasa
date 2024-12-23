@@ -1,0 +1,53 @@
+/*** Accordion ***/
+
+.accordion {
+  margin-bottom: 3rem;
+  border: none;
+  overflow: hidden;
+
+  &-header {
+    background-color: #ff6060;
+    color: $white-color;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: default;
+    border-radius: 8px;
+
+    h3 {
+      margin: 0;
+    }
+
+    .arrow {
+      color: $white-color;
+      width: 20px;
+      height: 20px;
+      background-image: url('../../assets/icons/accordion_arrow.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      cursor: pointer;
+      transition: transform 0.4s ease;
+
+      &.open {
+        transform: rotate(-180deg);
+      }
+    }
+  }
+
+  &-content {
+    max-height: 0; /* initialement caché */
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease; /* animation expansion */
+    padding: 0 15px;
+    background-color: $white-color;
+    border: none;
+
+    &.open {
+      max-height: 200px;
+      padding: 15px;
+    }
+  }
+}
+

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*** imports ***/
 /* base */
 /*** variables ***/
@@ -133,4 +134,62 @@ body {
   text-decoration: underline;
   color: #000000;
   font-size: 18px;
+}
+
+/*** Accordion ***/
+.accordion {
+  margin-bottom: 3rem;
+  border: none;
+  overflow: hidden;
+}
+.accordion-header {
+  background-color: #ff6060;
+  color: #FFFFFF;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: default;
+  border-radius: 8px;
+}
+.accordion-header h3 {
+  margin: 0;
+}
+.accordion-header .arrow {
+  color: #FFFFFF;
+  width: 20px;
+  height: 20px;
+  background-image: url("../../assets/icons/accordion_arrow.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+.accordion-header .arrow.open {
+  transform: rotate(-180deg);
+}
+.accordion-content {
+  max-height: 0; /* initialement caché */
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease; /* animation expansion */
+  padding: 0 15px;
+  background-color: #FFFFFF;
+  border: none;
+}
+.accordion-content.open {
+  max-height: 200px;
+  padding: 15px;
+}
+
+.accordion-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  max-width: 1023px;
 }
