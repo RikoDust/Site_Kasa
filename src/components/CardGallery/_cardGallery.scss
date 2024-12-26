@@ -1,0 +1,13 @@
+/*** CardGallery ***/
+
+.card-gallery {
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* Trois colonnes égales */
+    gap: 3rem;
+    padding: 3rem;
+    background-color: #F6F6F6;
+    border-radius: 20px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
