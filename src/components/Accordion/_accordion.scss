@@ -51,3 +51,21 @@
   }
 }
 
+
+
+/* Media Query "mobile"  (720px ou moins) */
+@media (max-width: 720px) {
+  .accordion{
+    margin-bottom: 2.7rem;
+    &-header{
+      padding: 10px;
+      h3{
+        font-size: 1.3rem;
+      }
+      .arrow{
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}

@@ -256,6 +256,22 @@ body {
   padding: 15px;
 }
 
+/* Media Query "mobile"  (720px ou moins) */
+@media (max-width: 720px) {
+  .accordion {
+    margin-bottom: 2.7rem;
+  }
+  .accordion-header {
+    padding: 10px;
+  }
+  .accordion-header h3 {
+    font-size: 1.3rem;
+  }
+  .accordion-header .arrow {
+    width: 16px;
+    height: 16px;
+  }
+}
 .accordion-group {
   display: flex;
   flex-direction: column;
@@ -268,6 +284,13 @@ body {
   max-width: 1023px;
 }
 
+/* Media Query "mobile"  (720px ou moins) */
+@media (max-width: 720px) {
+  .accordion-group {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 /*** Card ***/
 .card {
   position: relative;
