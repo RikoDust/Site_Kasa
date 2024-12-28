@@ -39,3 +39,25 @@
   }
 }
 
+
+
+/* Media Query "mobile"  (720px ou moins) */
+@media (max-width: 720px) {
+  .card{
+    height: 280px;
+    width: 100%;
+    border-radius: 10px;
+
+    &-title {
+      width: 60%;
+      top: 220px;
+      left: 10px;
+    }
+  }
+
+}
+
+
+
+
+

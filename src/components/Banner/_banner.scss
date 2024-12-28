@@ -32,3 +32,35 @@
     z-index: 2; // Au-dessus de l’image
   }
 }
+
+
+
+/* Media Query "mobile"  (720px ou moins) */
+@media (max-width: 720px) {
+  .banner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 130px;
+    width: calc(100% - 30px);
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin : 0 auto;
+    border-radius: 10px;
+    
+    &-img {
+      width: 100%;
+      height: 100%;
+
+    }
+  
+    h1 {
+      margin: auto;
+      font-size: 1.45rem;
+      width: 60%;
+      margin-left: 20px;
+    }
+  }
+
+}
