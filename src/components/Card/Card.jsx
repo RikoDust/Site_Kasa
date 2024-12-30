@@ -1,9 +1,13 @@
 import PropTypes from 'prop-types';
+import { useNavigate } from 'react-router-dom';
 import '../../styles/main.css';
 
+
 const Card = ({ id, title, cover }) => {
+    const navigate = useNavigate();
+
     const handleClick = () => {
-        console.log(`Carte cliquée : ${id}`);
+        navigate(`/logement/${id}`);
     };
 
     return (
