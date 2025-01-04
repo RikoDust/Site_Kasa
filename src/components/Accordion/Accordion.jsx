@@ -28,7 +28,7 @@ const Accordion = ({ title, content }) => {
 // Validation des propriétés
 Accordion.propTypes = {
     title: PropTypes.string.isRequired,
-    content: PropTypes.string.isRequired
+    content: PropTypes.node.isRequired
 };
 
 

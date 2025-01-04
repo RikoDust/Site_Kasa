@@ -18,29 +18,38 @@ const Carousel = ({ pictures }) => {
     };
 
 
+
     return (
         <div className='carousel'>
             <div className='carousel-container'>
-                <button className='carousel-button left' onClick={handlePrev}>
-                    <img src={arrowLeft} alt="Précédent" />
-                </button>
+                {totalImages > 1 && (
+                    <button className='carousel-button left' onClick={handlePrev}>
+                        <img src={arrowLeft} alt="Précédent" />
+                    </button>
+                )}
 
                 <img 
                     src={pictures[currentIndex]}
                     alt={`Slide ${currentIndex + 1}`}
                     className="carousel-image" />
 
+                {totalImages > 1 && (
                 <button className="carousel-button right" onClick={handleNext}>
                     <img src={arrowRight} alt="Suivant" />
                 </button>
+                )}
 
-                <div className='carousel-indicator'>
-                    {currentIndex + 1}/{totalImages}
-                </div>
+                {totalImages > 1 && (
+                    <div className='carousel-indicator'>
+                        {currentIndex + 1}/{totalImages}
+                    </div>
+                )}
             </div>
         </div>
     );
 };
+
+
 
 
 Carousel.propTypes = {
@@ -48,6 +57,8 @@ Carousel.propTypes = {
   };
 
 
+
+  
 
 
 export default Carousel;

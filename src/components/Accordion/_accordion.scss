@@ -6,7 +6,7 @@
   overflow: hidden;
 
   &-header {
-    background-color: #ff6060;
+    background-color: $red-color;
     color: $white-color;
     padding: 15px;
     display: flex;
@@ -56,11 +56,11 @@
 /* Media Query "mobile"  (720px ou moins) */
 @media (max-width: 720px) {
   .accordion{
-    margin-bottom: 2.7rem;
+    margin-bottom: 2rem;
     &-header{
       padding: 10px;
       h3{
-        font-size: 1.3rem;
+        font-size: 1rem;
       }
       .arrow{
         width: 16px;
