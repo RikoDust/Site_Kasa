@@ -1,6 +1,6 @@
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom"; // Import Link pour la navigation
-import '../../styles/main.css';
+import '../Header/_header.scss';
 import logo from "../../assets/logos/logo.png";
 
 function Header() {

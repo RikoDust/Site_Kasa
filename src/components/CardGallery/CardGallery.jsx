@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import Card from '../Card/Card';
-import '../../styles/main.css';
+import '../CardGallery/_cardGallery.scss';
 import data from '../../data/data.json';
 
 const CardGallery = () => {

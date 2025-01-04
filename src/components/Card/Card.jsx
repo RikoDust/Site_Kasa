@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
-import '../../styles/main.css';
+import '../Card/_card.scss';
 
 
 const Card = ({ id, title, cover }) => {

@@ -1,5 +1,9 @@
 /* HousingDetails */
 
+@use '../../styles/abstracts/variables';
+
+
+
 .housing-details{
     margin-bottom: 1rem;
 
@@ -8,8 +12,8 @@
 
         .header-left{
             .housing-title{
-                font-family: $font-primary;
-                color: $red-color;
+                font-family: variables.$font-primary;
+                color: variables.$red-color;
                 font-size: 2.1rem;
                 font-weight: 500;
                 margin-bottom: 5px;
@@ -27,8 +31,8 @@
                     font-weight: bold;
                     margin: 5px;
                     padding: 5px 10px;
-                    background-color: $red-color;
-                    color: $white-color;
+                    background-color: variables.$red-color;
+                    color: variables.$white-color;
                     border-radius: 10px;
                     min-width: 100px;
                     text-align: center;
@@ -48,7 +52,7 @@
                 .host-name{
                     font-size: 1.1rem;
                     width: 50%;
-                    color: $red-color;
+                    color: variables.$red-color;
                 }
                 .host-picture{
                     width: 64px;

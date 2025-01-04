@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
-import '../../styles/main.css';
+import '../Carousel/_carousel.scss';
 import arrowLeft from '../../assets/icons/arrow_left.png';
 import arrowRight from '../../assets/icons/arrow_right.png';
 
@@ -58,7 +58,7 @@ Carousel.propTypes = {
 
 
 
-  
+
 
 
 export default Carousel;

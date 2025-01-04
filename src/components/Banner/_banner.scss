@@ -1,5 +1,8 @@
 /*** Banner ***/
 
+@use '../../styles/abstracts/variables';
+
+
 .banner {
   position: relative;
   display: flex;
@@ -27,7 +30,7 @@
 
   h1 {
     margin: 0;
-    color: $white-color;
+    color: variables.$white-color;
     position: relative; // Place le texte par-dessus de l'image
     z-index: 2; // Au-dessus de l’image
   }

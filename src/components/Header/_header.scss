@@ -1,11 +1,14 @@
 /*** Header ***/
 
+@use '../../styles/abstracts/variables';
+
+
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0rem;
-    background-color: $background-color-primary;
+    background-color: variables.$background-color-primary;
 
     .logo {
         img {
@@ -20,7 +23,7 @@
 
         .nav-link {
             text-decoration: none;
-            color: $black-color;
+            color: variables.$black-color;
             font-size: 1.4rem;
             font-weight: 500;
             position: relative;
@@ -30,7 +33,7 @@
                 display: block;
                 width: 100%;
                 height: 2px;
-                background-color: $black-color;
+                background-color: variables.$black-color;
                 position: absolute;
                 bottom: -2px;
                 left: 0;

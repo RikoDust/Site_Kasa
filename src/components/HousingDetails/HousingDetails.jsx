@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import '../../styles/main.css';
+import '../HousingDetails/_housingDetails.scss';
 import emptyStar from '../../assets/icons/empty_star.png';
 import redStar from '../../assets/icons/red_star.png';
 import Accordion from '../Accordion/Accordion';

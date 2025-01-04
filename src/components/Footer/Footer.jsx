@@ -1,4 +1,4 @@
-import '../../styles/main.css';
+import '../Footer/_footer.scss';
 import logo from "../../assets/logos/white_logo.png";
 
 

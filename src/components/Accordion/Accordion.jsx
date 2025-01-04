@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
-import '../../styles/main.css';
+import '../Accordion/_accordion.scss';
 import arrowIcon from "../../assets/icons/accordion_arrow.png";
 
 const Accordion = ({ title, content }) => {

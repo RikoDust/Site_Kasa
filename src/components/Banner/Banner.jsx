@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import '../../styles/main.css';
+import '../Banner/_banner.scss';
 
 const Banner = ({ image, text = null }) => { 
     return (

@@ -1,3 +1,8 @@
+/*** Error404 ***/
+
+@use '../../styles/abstracts/variables';
+
+
 
 .error404{
     display: flex;
@@ -7,19 +12,19 @@
     margin-bottom: 7rem;
 
     .error-title{
-        color: $red-color;
+        color: variables.$red-color;
         font-size: 15rem;
         margin-top: 5rem;
         margin-bottom: 1.2rem;
     }
     .error-text{
-        color: $red-color;
+        color: variables.$red-color;
         font-size: 2.2rem;
         margin-bottom: 6rem;
     }
     .back-home{
         text-decoration: underline;
-        color: $black-color;
+        color: variables.$black-color;
         font-size: 18px;
     }
 }

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Accordion from '../Accordion/Accordion';
-import data from '../../data/accordionsData.json'
+import data from '../../data/accordionsData.json';
+import '../AccordionGroup/_accordionGroup.scss';
 
 
 const AccordionGroup = () => {

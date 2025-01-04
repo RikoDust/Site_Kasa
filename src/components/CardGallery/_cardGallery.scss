@@ -1,5 +1,8 @@
 /*** CardGallery ***/
 
+@use '../../styles/abstracts/variables';
+
+
 .card-gallery {
     justify-items: center;
     display: grid;
@@ -21,6 +24,6 @@
         gap: 2rem;
         padding: 15px;
         margin: 1rem auto;
-        background-color: $background-color-primary;
+        background-color: variables.$background-color-primary;
     }
 }

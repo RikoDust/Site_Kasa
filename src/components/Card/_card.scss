@@ -1,11 +1,14 @@
 /*** Card ***/
 
+@use '../../styles/abstracts/variables';
+
+
 .card {
   position: relative;
   height: 340px;
   width: 340px;
   border-radius: 8px;
-  color: $white-color;
+  color: variables.$white-color;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   cursor: pointer;
