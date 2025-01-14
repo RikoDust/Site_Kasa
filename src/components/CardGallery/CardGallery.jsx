@@ -1,10 +1,10 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react'; // useEffect enregistre les data dans projects - useState gére une liste de projet
 import Card from '../Card/Card';
 import '../CardGallery/_cardGallery.scss';
 import data from '../../data/data.json';
 
 const CardGallery = () => {
-    const [projects, setProjects] = useState([]);
+    const [projects, setProjects] = useState([]); 
 
     useEffect(() => {
         setProjects(data);

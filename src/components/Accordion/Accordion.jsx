@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from 'react'; // Gere l'état des accordéons ouvert ou fermé
 import PropTypes from 'prop-types';
 import '../Accordion/_accordion.scss';
 import arrowIcon from "../../assets/icons/accordion_arrow.png";

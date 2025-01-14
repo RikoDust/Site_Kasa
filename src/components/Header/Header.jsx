@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom"; // utilisé pour obtenir des infos sur l'URL actuelle
 import { Link } from "react-router-dom"; // Import Link pour la navigation
 import '../Header/_header.scss';
 import logo from "../../assets/logos/logo.png";

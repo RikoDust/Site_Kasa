@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import PropTypes from 'prop-types';
+import { useState } from 'react'; // Gére l'état de l'index de l'image affichée
+import PropTypes from 'prop-types'; // Passe les props
 import '../Carousel/_carousel.scss';
 import arrowLeft from '../../assets/icons/arrow_left.png';
 import arrowRight from '../../assets/icons/arrow_right.png';
@@ -22,7 +22,7 @@ const Carousel = ({ pictures }) => {
     return (
         <div className='carousel'>
             <div className='carousel-container'>
-                {totalImages > 1 && (
+                {totalImages > 1 && ( // affiche les elements si totalImages est suppérieur à 1
                     <button className='carousel-button left' onClick={handlePrev}>
                         <img src={arrowLeft} alt="Précédent" />
                     </button>

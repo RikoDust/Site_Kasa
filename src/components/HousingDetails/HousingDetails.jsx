@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'; // Importation des Proptypes pour validation des props
 import '../HousingDetails/_housingDetails.scss';
 import emptyStar from '../../assets/icons/empty_star.png';
 import redStar from '../../assets/icons/red_star.png';
@@ -31,7 +31,7 @@ const HousingDetails = ({ title, location, host, tags, rating, description, equi
                         {[...Array(5)].map((_, i) => (
                             <img
                                 key={i}
-                                src={i < parseInt(rating, 10) ? redStar : emptyStar}
+                                src={i < parseInt(rating, 10) ? redStar : emptyStar} // Le 10 correpond a la base numérique pour interpreter la string fournie par rating
                                 alt={i < parseInt(rating, 10) ? 'Étoile rouge' : 'Étoile vide'}
                                 className='star'
                             />
