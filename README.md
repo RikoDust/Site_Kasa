@@ -15,3 +15,10 @@ Objectifs pédagogiques :
  - Développer des éléments de l’interface d’un site web grâce à des composants React
  - Mettre en œuvre des animations CSS
  - Développer une interface web avec Sass
+
+______________________________________________________________________________________
+
+# Déploiement du site sur Vercel 
+
+ - https://vercel.com/rikodusts-projects/sitekasa (repo)
+ - https://sitekasa.vercel.app/logement/c67ab8a7 (pageWeb)
