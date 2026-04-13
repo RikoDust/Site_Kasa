@@ -43,12 +43,19 @@ Captures d'écran :
 ## 🚀 Installation et utilisation 
 
 **Prérequis**
-- 
-
+- Node.js (v18 ou supérieur)
+- npm
 
 
 ## Installation
-
+ - Cloner le repository
+  git clone https://github.com/RikoDust/Site_Kasa
+ - Accéder au dossier
+  cd kasa
+ - Installer les dépendances
+  npm install
+ - Lancer le serveur de développement
+  npm run dev
 
 
 
