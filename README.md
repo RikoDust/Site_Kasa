@@ -47,7 +47,7 @@ Captures d'écran :
 - npm
 
 
-## Installation
+**Installation**
  - Cloner le repository
   git clone https://github.com/RikoDust/Site_Kasa
  - Accéder au dossier
